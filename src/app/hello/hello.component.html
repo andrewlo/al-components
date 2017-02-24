@@ -9,9 +9,14 @@
 </al-section>
 
 <al-section heading="Pop Over">
-  <al-button label="Show" (onClick)="popOverOpen = true"></al-button>
+  <al-button label="Show menu" (onClick)="popOverOpen = true"></al-button>
   <al-pop-over [show]="popOverOpen" (close)="popOverOpen = false">
-    <p>Pop over contents</p>
+    <al-menu heading="Sort by:">
+      <al-menu-item label="Price" (onClick)="popOverOpen = false"></al-menu-item>
+      <al-menu-item label="Size" (onClick)="popOverOpen = false"></al-menu-item>
+      <al-menu-item label="Newest" (onClick)="popOverOpen = false"></al-menu-item>
+      <al-menu-item label="Top Rated" (onClick)="popOverOpen = false"></al-menu-item>
+    </al-menu>
   </al-pop-over>
   <al-button label="Show with backdrop" (onClick)="popOverBackdropOpen = true"></al-button>
   <al-pop-over [show]="popOverBackdropOpen" [backdrop]="true" (close)="popOverBackdropOpen = false">

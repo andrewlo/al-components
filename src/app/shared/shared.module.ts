@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 
 import { BackdropComponent } from './backdrop';
 import { ButtonComponent } from './button';
+import { MenuComponent } from './menu';
+import { MenuItemComponent } from './menu-item';
 import { PopOverComponent } from './pop-over';
 import { SectionComponent } from './section';
 import { SpinnerComponent } from './spinner';
@@ -17,6 +19,8 @@ import { SpinnerComponent } from './spinner';
   declarations: [
     BackdropComponent,
     ButtonComponent,
+    MenuComponent,
+    MenuItemComponent,
     PopOverComponent,
     SectionComponent,
     SpinnerComponent,
@@ -24,6 +28,8 @@ import { SpinnerComponent } from './spinner';
   exports: [
     BackdropComponent,
     ButtonComponent,
+    MenuComponent,
+    MenuItemComponent,
     PopOverComponent,
     SectionComponent,
     SpinnerComponent,

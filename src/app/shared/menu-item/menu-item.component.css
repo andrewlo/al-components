@@ -1,0 +1,15 @@
+
+:host {
+  display: block;
+}
+
+.item {
+  padding: 5px;
+  cursor: pointer;
+  color: #595959;
+  transition: background-color 0.5s ease;
+}
+
+.item:hover {
+  background-color: #b8e0b9;
+}

@@ -15,6 +15,7 @@ button {
   margin-bottom: 4px;
   border-radius: 4px;
   width: 175px;
+  cursor: pointer;
 }
 
 button:disabled {

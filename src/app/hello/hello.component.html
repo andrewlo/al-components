@@ -7,3 +7,14 @@
 <al-section heading="Spinner">
   <al-spinner></al-spinner>
 </al-section>
+
+<al-section heading="Pop Over">
+  <al-button label="Show" (onClick)="popOverOpen = true"></al-button>
+  <al-pop-over [show]="popOverOpen" (close)="popOverOpen = false">
+    <p>Pop over contents</p>
+  </al-pop-over>
+  <al-button label="Show with backdrop" (onClick)="popOverBackdropOpen = true"></al-button>
+  <al-pop-over [show]="popOverBackdropOpen" [backdrop]="true" (close)="popOverBackdropOpen = false">
+    <p>Pop over contents</p>
+  </al-pop-over>
+</al-section>

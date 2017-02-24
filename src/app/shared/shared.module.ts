@@ -4,7 +4,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { BackdropComponent } from './backdrop';
 import { ButtonComponent } from './button';
+import { PopOverComponent } from './pop-over';
 import { SectionComponent } from './section';
 import { SpinnerComponent } from './spinner';
 
@@ -13,12 +15,16 @@ import { SpinnerComponent } from './spinner';
     CommonModule,
   ],
   declarations: [
+    BackdropComponent,
     ButtonComponent,
+    PopOverComponent,
     SectionComponent,
     SpinnerComponent,
   ],
   exports: [
+    BackdropComponent,
     ButtonComponent,
+    PopOverComponent,
     SectionComponent,
     SpinnerComponent,
   ],

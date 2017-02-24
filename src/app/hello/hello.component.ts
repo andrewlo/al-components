@@ -7,9 +7,14 @@ import { Component } from '@angular/core';
 export class HelloComponent {
 
   buttonLoading = false;
+  popOverOpen = false;
 
   onClick() {
     this.buttonLoading = true;
     setTimeout(() => this.buttonLoading = false, 1000);
+  }
+
+  openPopOver() {
+    this.popOverOpen = true;
   }
 }

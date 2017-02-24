@@ -1,0 +1,4 @@
+<div [ngClass]="{ show: show }" class="pop-over">
+  <ng-content></ng-content>
+</div>
+<al-backdrop [show]="show" (click)="close.emit()" [darken]="backdrop"></al-backdrop>

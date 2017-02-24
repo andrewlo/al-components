@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ButtonComponent } from './button';
+import { SectionComponent } from './section';
 import { SpinnerComponent } from './spinner';
 
 @NgModule({
@@ -13,10 +14,12 @@ import { SpinnerComponent } from './spinner';
   ],
   declarations: [
     ButtonComponent,
+    SectionComponent,
     SpinnerComponent,
   ],
   exports: [
     ButtonComponent,
+    SectionComponent,
     SpinnerComponent,
   ],
 })

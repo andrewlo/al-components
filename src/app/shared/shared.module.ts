@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ButtonComponent } from './button';
+import { SpinnerComponent } from './spinner';
 
 @NgModule({
   imports: [
@@ -12,9 +13,11 @@ import { ButtonComponent } from './button';
   ],
   declarations: [
     ButtonComponent,
+    SpinnerComponent,
   ],
   exports: [
     ButtonComponent,
+    SpinnerComponent,
   ],
 })
 export class SharedModule {}

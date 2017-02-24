@@ -5,7 +5,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./hello.component.css'],
 })
 export class HelloComponent {
+
+  buttonLoading = false;
+
   onClick() {
-    alert('clicked');
+    this.buttonLoading = true;
+    setTimeout(() => this.buttonLoading = false, 1000);
   }
 }

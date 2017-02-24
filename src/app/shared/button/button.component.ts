@@ -6,7 +6,11 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./button.component.css'],
 })
 export class ButtonComponent {
+  @Input() label = 'Button';
+
   @Input() disabled = false;
+
+  @Input() loading = false;
 
   @Output() onClick = new EventEmitter();
 }

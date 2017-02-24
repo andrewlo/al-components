@@ -1,3 +1,7 @@
 <h1>Button</h1>
-<al-button (onClick)="onClick()"></al-button>
-<al-button (onClick)="onClick()" disabled="true"></al-button>
+<al-button (onClick)="onClick()" [loading]="buttonLoading"></al-button>
+<al-button (onClick)="onClick()" disabled="true" label="Disabled"></al-button>
+<al-button (onClick)="onClick()" loading="true"></al-button>
+
+<h1>Spinner</h1>
+<al-spinner></al-spinner>

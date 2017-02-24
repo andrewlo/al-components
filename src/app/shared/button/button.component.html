@@ -1,2 +1,5 @@
 <button (click)="onClick.emit()"
-  [disabled]="disabled">Button</button>
+  [disabled]="disabled || loading">
+  <span *ngIf="!loading">{{label}}</span>
+  <al-spinner *ngIf="loading" size="18px"></al-spinner>
+</button>

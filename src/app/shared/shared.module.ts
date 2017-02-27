@@ -4,6 +4,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { AlertComponent } from './alert';
 import { BackdropComponent } from './backdrop';
 import { ButtonComponent } from './button';
 import { MenuComponent } from './menu';
@@ -20,6 +21,7 @@ import { SpinnerComponent } from './spinner';
     CommonModule,
   ],
   declarations: [
+    AlertComponent,
     BackdropComponent,
     ButtonComponent,
     MenuComponent,
@@ -32,6 +34,7 @@ import { SpinnerComponent } from './spinner';
     SpinnerComponent,
   ],
   exports: [
+    AlertComponent,
     BackdropComponent,
     ButtonComponent,
     MenuComponent,

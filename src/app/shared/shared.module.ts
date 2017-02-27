@@ -9,8 +9,10 @@ import { ButtonComponent } from './button';
 import { MenuComponent } from './menu';
 import { MenuItemComponent } from './menu-item';
 import { ModalComponent } from './modal';
+import { NavBarComponent } from './nav-bar';
 import { PopOverComponent } from './pop-over';
 import { SectionComponent } from './section';
+import { SideMenuComponent } from './side-menu';
 import { SpinnerComponent } from './spinner';
 
 @NgModule({
@@ -23,8 +25,10 @@ import { SpinnerComponent } from './spinner';
     MenuComponent,
     MenuItemComponent,
     ModalComponent,
+    NavBarComponent,
     PopOverComponent,
     SectionComponent,
+    SideMenuComponent,
     SpinnerComponent,
   ],
   exports: [
@@ -33,8 +37,10 @@ import { SpinnerComponent } from './spinner';
     MenuComponent,
     MenuItemComponent,
     ModalComponent,
+    NavBarComponent,
     PopOverComponent,
     SectionComponent,
+    SideMenuComponent,
     SpinnerComponent,
   ],
 })

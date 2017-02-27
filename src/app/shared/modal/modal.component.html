@@ -1,0 +1,6 @@
+
+<al-backdrop [show]="show" (click)="close.emit()" [darken]="true">
+  <div [ngClass]="{ show: show }" class="modal">
+    <ng-content></ng-content>
+  </div>
+</al-backdrop>

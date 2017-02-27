@@ -1,3 +1,6 @@
+<al-nav-bar heading="Demo" (onLeftClick)="sideMenuOpen = true"></al-nav-bar>
+<al-side-menu [show]="sideMenuOpen" (close)="sideMenuOpen = false">SIDE MENU</al-side-menu>
+
 <al-section heading="Button">
   <al-button (onClick)="onClick()" [loading]="buttonLoading"></al-button>
   <al-button (onClick)="onClick()" disabled="true" label="Disabled"></al-button>

@@ -1,0 +1,18 @@
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  background-color: white;
+  margin: 40% auto;
+  width: 80%;
+  transition: opacity 0.2s ease-in-out;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccf5ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}

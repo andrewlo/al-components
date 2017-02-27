@@ -1,0 +1,21 @@
+
+:host {
+  display: block;
+}
+
+.nav-bar {
+  z-index: 2;
+  background-color: #5fb962;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-bottom: solid 1px #95d097;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.left {
+  float: left;
+  position: absolute;
+  cursor: pointer;
+}

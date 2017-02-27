@@ -23,3 +23,10 @@
     <p>Pop over contents</p>
   </al-pop-over>
 </al-section>
+
+<al-section heading="Modal">
+  <al-button label="Show" (onClick)="modalOpen = true"></al-button>
+  <al-modal [show]="modalOpen" (close)="modalOpen = false">
+    <p>Modal contents</p>
+  </al-modal>
+</al-section>

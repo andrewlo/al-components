@@ -1,13 +1,7 @@
-[![Circle CI](https://circleci.com/gh/rangle/angular2-starter.svg?style=svg)](https://circleci.com/gh/rangle/angular2-starter)
 
-# Angular 2/TypeScript/Webpack Starter
+# AL Components
 
-This is the initial version of our starter project using Angular 2.x, TypeScript and Webpack to tie it all together.
-
-## Getting Started
-
-Use our [starter script](http://npm.im/rangle-starter), with
-`angular2-starter` as the `techStack` argument.
+Sandbox app to practice creating some commonly used UI components.
 
 ## npm scripts
 
@@ -61,56 +55,3 @@ $ npm run test:watch
 ```bash
 $ npm run cover
 ```
-
-## Webpack
-
-Configurations:
-- For dev & jit: `webpack.config.js`
-- For production & AoT: `webpack-aot.config.js`
-
-The webpack directory consists of:
-- `loaders.js`: definitions for all the loaders used in this project
-- `plugins.js`: definitions for all the plugins used in this project. These are grouped based on `process.env`.
-- `postcss.js`: configuration for the postcss plugin.
-
-### Bundle Profiling
-
-If you want to analyze the contents and size of the production bundles you can run one of the following commands:
-- `npm run profile-build` for AoT builds
-- `npm run profile-build:jit` for JiT builds
-
-These commands produce a `stats.json` manifest in the project root and also opens a web page using `webpack-bundle-analyzer` so that you can parse it visually.
-
-#### Connecting to remote APIs
-
-Both the devmode and production servers provide a way to proxy requests to
-remote HTTP APIs.  This can be useful for working around CORS issues when
-developing your software.
-
-Edit [this file](server/proxy-config.js) to mount such APIs at a given path.
-
-## Improvements
-
-This is an initial version of this setup and will be expanded in the future. Refer to the [issues section](https://github.com/rangle/rangle-starter/issues) to see what needs to be done, or create a [new one](https://github.com/rangle/rangle-starter/issues/new).
-
-Issues for this particular starter project are tagged with the 'ng2' label.
-
-## If something doesn't work
-
-We centralize issue management for all rangle starters in the [rangle-starter](https://github.com/rangle/rangle-starter) repository, to help us keep things consistent.
-
-Refer to the [issues section](https://github.com/rangle/rangle-starter/issues) to see if this has already been logged. Otherwise create a [new issue](https://github.com/rangle/rangle-starter/issues/new).
-
-Be sure to tag your new issue with the 'ng2' label so we can see which starter you're filing it for.
-
-## Example Application
-
-An example app using this starter can be found [here](https://github.com/rangle/angular2-starter-example).
-
-## License
-
-Copyright (c) 2016 rangle.io
-
-[MIT License][MIT]
-
-[MIT]: ./LICENSE "Mit License"

@@ -1,1 +1,8 @@
-LOGIN
+<form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+
+  <al-input-form id="email" label="Email:" placeholder="Enter email" [form]="loginForm"></al-input-form>
+  <al-input-form id="password" label="Password:" placeholder="Enter password" [form]="loginForm"></al-input-form>
+
+  <!-- TODO switch to al-button -->
+  <button type="submit" [disabled]="!loginForm.valid">Log In</button>
+</form>

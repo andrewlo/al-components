@@ -1,12 +1,3 @@
-<al-nav-bar heading="Demo" (onLeftClick)="sideMenuOpen = true"></al-nav-bar>
-<al-side-menu [show]="sideMenuOpen" (close)="sideMenuOpen = false">
-  <al-menu heading="Demo App">
-    <al-menu-item label="Products" (onClick)="sideMenuOpen = false"></al-menu-item>
-    <al-menu-item label="Reviews" (onClick)="sideMenuOpen = false"></al-menu-item>
-    <al-menu-item label="About" (onClick)="sideMenuOpen = false"></al-menu-item>
-    <al-menu-item label="Contact Us" (onClick)="sideMenuOpen = false"></al-menu-item>
-  </al-menu>
-</al-side-menu>
 
 <al-section heading="Button">
   <al-button (onClick)="onClick()" [loading]="buttonLoading"></al-button>

@@ -5,4 +5,6 @@ import '../styles/index.css';
   selector: 'al-app',
   templateUrl: './app.component.html',
 })
-export class AppComponent { }
+export class AppComponent {
+  sideMenuOpen = false;
+}

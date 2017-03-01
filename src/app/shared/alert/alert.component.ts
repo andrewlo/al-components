@@ -1,11 +1,11 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'al-alert',
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.css'],
 })
-export class AlertComponent {
+export class AlertComponent implements OnChanges {
   @Input() message: string;
 
   @Input() heading: string;

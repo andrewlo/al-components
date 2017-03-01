@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { HelloModule } from './hello/hello.module';
+import { LoginModule } from './login/login.module';
+import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 
@@ -13,6 +15,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     CoreModule,
     HelloModule,
+    LoginModule,
+    SharedModule,
   ],
   declarations: [
     AppComponent,

@@ -8,6 +8,8 @@ export class HelloComponent {
 
   buttonLoading = false;
   popOverOpen = false;
+  popOverBackdropOpen = false;
+  modalOpen = false;
 
   onClick() {
     this.buttonLoading = true;

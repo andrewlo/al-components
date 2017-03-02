@@ -1,8 +1,13 @@
 <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+  <p>Username: user, Password: pass</p>
 
-  <al-input-form id="email" label="Email:" placeholder="Enter email" [form]="loginForm"></al-input-form>
-  <al-input-form id="password" label="Password:" placeholder="Enter password" [form]="loginForm"></al-input-form>
+  <al-input-form id="email" label="Email:" placeholder="Enter email"
+    [form]="loginForm" [disabled]="loggingIn"></al-input-form>
+  <al-input-form id="password" label="Password:" placeholder="Enter password"
+    [form]="loginForm" [disabled]="loggingIn"></al-input-form>
 
-  <!-- TODO switch to al-button -->
-  <button type="submit" [disabled]="!loginForm.valid">Log In</button>
-</form>
+  <al-button type="submit" [disabled]="!loginForm.valid" label="Log In"
+    [loading]="loggingIn"></al-button>
+  <al-alert type="success" message="Log in successful!" *ngIf="loginSuccess"></al-alert>
+  <al-alert type="error" message="Log in error" *ngIf="loginError"></al-alert>
+ </form>

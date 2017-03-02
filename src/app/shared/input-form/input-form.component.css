@@ -3,3 +3,25 @@
   display: block;
   margin-bottom: 5px;
 }
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 5px;
+}
+
+input.ng-dirty.ng-touched.ng-valid {
+  border: 2px solid #95d097;
+}
+
+
+input.ng-dirty.ng-touched.ng-invalid {
+  border: 2px solid #ff3333;
+}
+
+al-alert {
+  margin-bottom: 5px;
+}

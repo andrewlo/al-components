@@ -12,5 +12,7 @@ export class ButtonComponent {
 
   @Input() loading = false;
 
+  @Input() type: string;
+
   @Output() onClick = new EventEmitter();
 }

@@ -7,6 +7,9 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class LoginComponent {
   loginForm: FormGroup;
+  loggingIn = false;
+  loginSuccess = false;
+  loginError = false;
 
   constructor(private formBuilder: FormBuilder) {
     this.loginForm = this.formBuilder.group({
@@ -16,7 +19,18 @@ export class LoginComponent {
   }
 
   onSubmit() {
-    // TODO fake API response
-    console.log('submit ', this.loginForm.value);
+    // This is just a mock of an API call for testing
+    this.loggingIn = true;
+    this.loginSuccess = false;
+    this.loginError = false;
+    setTimeout(() => {
+      let {email, password} = this.loginForm.value;
+      if (email === 'user' && password === 'pass') {
+        this.loginSuccess = true;
+      } else {
+        this.loginError = true;
+      }
+      this.loggingIn = false;
+    }, 2000);
   }
 }

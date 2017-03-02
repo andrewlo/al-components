@@ -1,5 +1,6 @@
 :host {
   display: block;
+  appearance: none;
 }
 
 button {
@@ -20,4 +21,8 @@ button {
 
 button:disabled {
   opacity: 0.6;
+}
+
+button[type=submit] {
+  appearance: none;
 }

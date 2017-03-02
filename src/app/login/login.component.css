@@ -1,0 +1,8 @@
+:host {
+  display: block;
+  padding: 10px;
+}
+
+p {
+  font-style: italic;
+}

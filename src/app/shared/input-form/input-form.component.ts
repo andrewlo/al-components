@@ -13,5 +13,7 @@ export class InputFormComponent {
 
   @Input() placeholder: string;
 
+  @Input() disabled = false;
+
   @Input() form: FormGroup;
 }

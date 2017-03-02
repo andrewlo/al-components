@@ -7,4 +7,14 @@ import { Component, Input } from '@angular/core';
 })
 export class SectionComponent {
   @Input() heading: string;
+
+  @Input() expandable = false;
+
+  expanded = true;
+
+  toggleExpand() {
+    if (this.expandable) {
+      this.expanded = !this.expanded;
+    }
+  }
 }

@@ -24,7 +24,7 @@ export class LoginComponent {
     this.loginSuccess = false;
     this.loginError = false;
     setTimeout(() => {
-      let {email, password} = this.loginForm.value;
+      const {email, password} = this.loginForm.value;
       if (email === 'user' && password === 'pass') {
         this.loginSuccess = true;
       } else {

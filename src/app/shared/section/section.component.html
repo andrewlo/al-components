@@ -1,5 +1,10 @@
-<header *ngIf="heading">{{heading}}</header>
+<header *ngIf="heading" (click)="toggleExpand()"
+  [ngClass]="{ expandable: expandable }">
+  {{heading}}
+  <i *ngIf="expandable && expanded" class="fa fa-minus expandable-icon"></i>
+  <i *ngIf="expandable && !expanded" class="fa fa-plus expandable-icon"></i>
+</header>
 
-<section>
+<section [ngClass]="{ expanded: expanded }">
   <ng-content></ng-content>
 </section>

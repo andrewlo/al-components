@@ -10,3 +10,22 @@ header {
   font-size: 1.5em;
   border-bottom: 1px solid lightgrey;
 }
+
+header.expandable {
+  cursor: pointer;
+}
+
+.expandable-icon {
+  float: right;
+  color: lightgrey;
+}
+
+section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+section.expanded {
+  max-height: 500px;
+}

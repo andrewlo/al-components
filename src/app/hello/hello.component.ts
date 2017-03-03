@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { NotificationService } from '../core/notification.service';
 
 @Component({
+  selector: 'al-hello',
   templateUrl: './hello.component.html',
   styleUrls: ['./hello.component.css'],
 })

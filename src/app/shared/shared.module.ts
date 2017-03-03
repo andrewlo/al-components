@@ -9,6 +9,8 @@ import { AlertComponent } from './alert';
 import { BackdropComponent } from './backdrop';
 import { ButtonComponent } from './button';
 import { InputFormComponent } from './input-form';
+import { ListComponent } from './list';
+import { ListItemComponent } from './list-item';
 import { MenuComponent } from './menu';
 import { MenuItemComponent } from './menu-item';
 import { ModalComponent } from './modal';
@@ -30,6 +32,8 @@ import { SpinnerComponent } from './spinner';
     BackdropComponent,
     ButtonComponent,
     InputFormComponent,
+    ListComponent,
+    ListItemComponent,
     MenuComponent,
     MenuItemComponent,
     ModalComponent,
@@ -46,6 +50,8 @@ import { SpinnerComponent } from './spinner';
     BackdropComponent,
     ButtonComponent,
     InputFormComponent,
+    ListComponent,
+    ListItemComponent,
     MenuComponent,
     MenuItemComponent,
     ModalComponent,

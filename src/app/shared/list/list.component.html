@@ -1,0 +1,5 @@
+<header *ngIf="heading">{{heading}}</header>
+<section>
+  <al-list-item *ngFor="let item of list trackBy item?.id" [item]="item"></al-list-item>
+</section>
+<div>Load more</div>

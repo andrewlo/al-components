@@ -1,8 +1,8 @@
 
 <al-section heading="Button">
-  <al-button (onClick)="onClick()" [loading]="buttonLoading"></al-button>
-  <al-button (onClick)="onClick()" disabled="true" label="Disabled"></al-button>
-  <al-button (onClick)="onClick()" loading="true"></al-button>
+  <al-button (onClick)="onButtonClick()" [loading]="buttonLoading"></al-button>
+  <al-button (onClick)="onButtonClick()" disabled="true" label="Disabled"></al-button>
+  <al-button loading="true"></al-button>
 </al-section>
 
 <al-section heading="Spinner">
@@ -47,4 +47,8 @@
   <al-alert type="message" message="Message"></al-alert>
   <al-alert type="warning" heading="Custom heading" message="Warning"></al-alert>
   <al-alert type="success" message="Action was successful"></al-alert>
+</al-section>
+
+<al-section heading="Notifications">
+  <al-button (onClick)="showNotification()" label="Show"></al-button>
 </al-section>

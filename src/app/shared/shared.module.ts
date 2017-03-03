@@ -13,6 +13,8 @@ import { MenuComponent } from './menu';
 import { MenuItemComponent } from './menu-item';
 import { ModalComponent } from './modal';
 import { NavBarComponent } from './nav-bar';
+import { NotificationComponent } from './notification';
+import { NotificationsComponent } from './notifications';
 import { PopOverComponent } from './pop-over';
 import { SectionComponent } from './section';
 import { SideMenuComponent } from './side-menu';
@@ -32,6 +34,8 @@ import { SpinnerComponent } from './spinner';
     MenuItemComponent,
     ModalComponent,
     NavBarComponent,
+    NotificationComponent,
+    NotificationsComponent,
     PopOverComponent,
     SectionComponent,
     SideMenuComponent,
@@ -46,6 +50,8 @@ import { SpinnerComponent } from './spinner';
     MenuItemComponent,
     ModalComponent,
     NavBarComponent,
+    NotificationComponent,
+    NotificationsComponent,
     PopOverComponent,
     SectionComponent,
     SideMenuComponent,

@@ -1,4 +1,4 @@
 <div class="alert" [ngClass]="type">
-  <div class="heading">{{heading}}</div>
+  <div *ngIf="showHeading" class="heading">{{heading}}</div>
   <div>{{message}}</div>
 </div>

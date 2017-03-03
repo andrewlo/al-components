@@ -10,6 +10,8 @@ export class AlertComponent implements OnChanges {
 
   @Input() heading: string;
 
+  @Input() showHeading = true;
+
   @Input() type: string;
 
   @Output() close = new EventEmitter();

@@ -23,14 +23,16 @@ export class LoginComponent {
     this.loggingIn = true;
     this.loginSuccess = false;
     this.loginError = false;
-    setTimeout(() => {
-      const {email, password} = this.loginForm.value;
-      if (email === 'user' && password === 'pass') {
-        this.loginSuccess = true;
-      } else {
-        this.loginError = true;
-      }
-      this.loggingIn = false;
-    }, 2000);
+    setTimeout(
+      () => {
+        const {email, password} = this.loginForm.value;
+        if (email === 'user' && password === 'pass') {
+          this.loginSuccess = true;
+        } else {
+          this.loginError = true;
+        }
+        this.loggingIn = false;
+      },
+      2000);
   }
 }

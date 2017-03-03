@@ -11,6 +11,7 @@ import { ButtonComponent } from './button';
 import { InputFormComponent } from './input-form';
 import { ListComponent } from './list';
 import { ListItemComponent } from './list-item';
+import { LoadMoreComponent } from './load-more';
 import { MenuComponent } from './menu';
 import { MenuItemComponent } from './menu-item';
 import { ModalComponent } from './modal';
@@ -34,6 +35,7 @@ import { SpinnerComponent } from './spinner';
     InputFormComponent,
     ListComponent,
     ListItemComponent,
+    LoadMoreComponent,
     MenuComponent,
     MenuItemComponent,
     ModalComponent,
@@ -52,6 +54,7 @@ import { SpinnerComponent } from './spinner';
     InputFormComponent,
     ListComponent,
     ListItemComponent,
+    LoadMoreComponent,
     MenuComponent,
     MenuItemComponent,
     ModalComponent,

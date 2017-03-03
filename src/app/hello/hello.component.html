@@ -52,3 +52,7 @@
 <al-section heading="Notifications">
   <al-button (onClick)="showNotification()" label="Show"></al-button>
 </al-section>
+
+<al-section heading="Load more">
+  <al-load-more (load)="loadMore()" [loading]="loadingMore"></al-load-more>
+</al-section>

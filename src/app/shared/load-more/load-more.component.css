@@ -1,0 +1,19 @@
+
+:host {
+  display: block;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.load-more {
+  cursor: pointer;
+  color: #4caf50;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

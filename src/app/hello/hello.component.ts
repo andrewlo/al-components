@@ -16,6 +16,8 @@ export class HelloComponent {
 
   notificationNumber = 1;
 
+  loadingMore = false;
+
   constructor(private notificationService: NotificationService) {}
 
   onButtonClick() {
@@ -30,5 +32,10 @@ export class HelloComponent {
   showNotification() {
     this.notificationService.addNotification(`New notification ${this.notificationNumber}!`);
     this.notificationNumber++;
+  }
+
+  loadMore() {
+    this.loadingMore = true;
+    setTimeout(() => this.loadingMore = false, 1000);
   }
 }

@@ -6,8 +6,6 @@ import { Component, Input, Output, EventEmitter, OnChanges } from '@angular/core
   styleUrls: ['./alert.component.css'],
 })
 export class AlertComponent implements OnChanges {
-  @Input() message: string;
-
   @Input() heading: string;
 
   @Input() showHeading = true;

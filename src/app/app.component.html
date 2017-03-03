@@ -3,12 +3,12 @@
 <al-nav-bar heading="Demo" (onLeftClick)="sideMenuOpen = true"></al-nav-bar>
 <al-side-menu [show]="sideMenuOpen" (close)="sideMenuOpen = false">
   <al-menu heading="Demo App">
-    <al-menu-item label="Home" routerLink="" icon="fa-home" size="large"
-      (onClick)="sideMenuOpen = false"></al-menu-item>
-    <al-menu-item label="Login" routerLink="login" icon="fa-sign-in" size="large"
-      (onClick)="sideMenuOpen = false"></al-menu-item>
-    <al-menu-item label="List" routerLink="list" icon="fa-list" size="large"
-      (onClick)="sideMenuOpen = false"></al-menu-item>
+    <al-menu-item routerLink="" icon="fa-home" size="large"
+      (onClick)="sideMenuOpen = false">Home</al-menu-item>
+    <al-menu-item routerLink="login" icon="fa-sign-in" size="large"
+      (onClick)="sideMenuOpen = false">Login</al-menu-item>
+    <al-menu-item routerLink="list" icon="fa-list" size="large"
+      (onClick)="sideMenuOpen = false">List</al-menu-item>
   </al-menu>
 </al-side-menu>
 

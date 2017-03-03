@@ -4,7 +4,7 @@
   <input type="text" formControlName="{{id}}" placeholder="{{placeholder}}"
     [attr.disabled]="disabled ? true : null">
 
-  <al-alert type="error" [hidden]="form.get(id).valid || form.get(id).pristine"
-    message="{{label}} invalid" [showHeading]="false">
+  <al-alert type="error" [hidden]="form.get(id).valid || form.get(id).pristine" [showHeading]="false">
+    {{label}} invalid
   </al-alert>
 </div>

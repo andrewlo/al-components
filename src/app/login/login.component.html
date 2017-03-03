@@ -6,8 +6,7 @@
   <al-input-form id="password" label="Password:" placeholder="Enter password"
     [form]="loginForm" [disabled]="loggingIn"></al-input-form>
 
-  <al-button type="submit" [disabled]="!loginForm.valid" label="Log In"
-    [loading]="loggingIn"></al-button>
-  <al-alert type="success" message="Log in successful!" *ngIf="loginSuccess"></al-alert>
-  <al-alert type="error" message="Log in error" *ngIf="loginError"></al-alert>
+  <al-button type="submit" [disabled]="!loginForm.valid" [loading]="loggingIn">Log In</al-button>
+  <al-alert type="success" [showHeading]="false" *ngIf="loginSuccess">Log in successful!</al-alert>
+  <al-alert type="error" [showHeading]="false" *ngIf="loginError">Log in error</al-alert>
  </form>

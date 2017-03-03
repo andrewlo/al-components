@@ -6,8 +6,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./menu-item.component.css'],
 })
 export class MenuItemComponent {
-  @Input() label: string;
-
   @Input() icon: string;
 
   @Input() size = 'medium';

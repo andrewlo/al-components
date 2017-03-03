@@ -1,8 +1,8 @@
 
 <al-section heading="Button">
-  <al-button (onClick)="onButtonClick()" [loading]="buttonLoading"></al-button>
-  <al-button (onClick)="onButtonClick()" disabled="true" label="Disabled"></al-button>
-  <al-button loading="true"></al-button>
+  <al-button (onClick)="onButtonClick()" [loading]="buttonLoading">Label</al-button>
+  <al-button (onClick)="onButtonClick()" disabled="true">Disabled</al-button>
+  <al-button loading="true">Loading</al-button>
 </al-section>
 
 <al-section heading="Spinner">
@@ -10,23 +10,23 @@
 </al-section>
 
 <al-section heading="Pop Over">
-  <al-button label="Show menu" (onClick)="popOverOpen = true"></al-button>
+  <al-button (onClick)="popOverOpen = true">Show menu</al-button>
   <al-pop-over [show]="popOverOpen" (close)="popOverOpen = false">
     <al-menu heading="Sort by:">
-      <al-menu-item label="Price" (onClick)="popOverOpen = false"></al-menu-item>
-      <al-menu-item label="Size" (onClick)="popOverOpen = false"></al-menu-item>
-      <al-menu-item label="Newest" (onClick)="popOverOpen = false"></al-menu-item>
-      <al-menu-item label="Top Rated" (onClick)="popOverOpen = false"></al-menu-item>
+      <al-menu-item (onClick)="popOverOpen = false">Price</al-menu-item>
+      <al-menu-item (onClick)="popOverOpen = false">Size</al-menu-item>
+      <al-menu-item (onClick)="popOverOpen = false">Newest</al-menu-item>
+      <al-menu-item (onClick)="popOverOpen = false">Top Rated</al-menu-item>
     </al-menu>
   </al-pop-over>
-  <al-button label="Show with backdrop" (onClick)="popOverBackdropOpen = true"></al-button>
+  <al-button (onClick)="popOverBackdropOpen = true">Show with backdrop</al-button>
   <al-pop-over [show]="popOverBackdropOpen" [backdrop]="true" (close)="popOverBackdropOpen = false">
     <p>Pop over contents</p>
   </al-pop-over>
 </al-section>
 
 <al-section heading="Modal">
-  <al-button label="Show" (onClick)="modalOpen = true"></al-button>
+  <al-button (onClick)="modalOpen = true">Show modal</al-button>
   <al-modal [show]="modalOpen" (close)="modalOpen = false">
     <p>Modal contents</p>
   </al-modal>
@@ -43,14 +43,14 @@
 </al-section>
 
 <al-section heading="Alert">
-  <al-alert type="error" message="Error has occured"></al-alert>
-  <al-alert type="message" message="Message"></al-alert>
-  <al-alert type="warning" heading="Custom heading" message="Warning"></al-alert>
-  <al-alert type="success" message="Action was successful"></al-alert>
+  <al-alert type="error">Error has occured</al-alert>
+  <al-alert type="message">Message</al-alert>
+  <al-alert type="warning" heading="Custom heading">Warning</al-alert>
+  <al-alert type="success">Action was successful</al-alert>
 </al-section>
 
 <al-section heading="Notifications">
-  <al-button (onClick)="showNotification()" label="Show"></al-button>
+  <al-button (onClick)="showNotification()">Add notification</al-button>
 </al-section>
 
 <al-section heading="Load more">

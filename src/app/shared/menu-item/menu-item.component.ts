@@ -8,5 +8,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class MenuItemComponent {
   @Input() label: string;
 
+  @Input() icon: string;
+
+  @Input() size = 'medium';
+
   @Output() onClick = new EventEmitter();
 }

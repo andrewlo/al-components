@@ -10,6 +10,15 @@
   transition: background-color 0.5s ease;
 }
 
+.item.large {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
 .item:hover {
   background-color: #b8e0b9;
 }

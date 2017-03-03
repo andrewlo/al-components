@@ -8,3 +8,7 @@
 .notification.show {
   transform: translateX(0);
 }
+
+.icon {
+  margin-right: 10px;
+}

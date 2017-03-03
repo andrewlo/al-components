@@ -30,7 +30,7 @@ export class HelloComponent {
   }
 
   showNotification() {
-    this.notificationService.addNotification(`New notification ${this.notificationNumber}!`);
+    this.notificationService.addNotification(`New notification ${this.notificationNumber}`);
     this.notificationNumber++;
   }
 

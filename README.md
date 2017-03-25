@@ -3,6 +3,9 @@
 
 Sandbox app to practice creating some commonly used UI components.
 
+Live deployment here:
+https://al-components.herokuapp.com/
+
 ## npm scripts
 
 > To see all available scripts:

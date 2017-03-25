@@ -3,7 +3,6 @@ const superstatic = require('superstatic').server;
 
 const options = {
   port: process.env.PORT || 8080,
-  host: '127.0.0.1',
   config: {
     public: './dist',
     rewrites: [
@@ -17,5 +16,5 @@ const options = {
 const app = superstatic(options);
 
 app.listen(err => {
-  err ? console.error(err) : console.log('Superstatic now serving...');
+  err ? console.error(err) : console.log(`Superstatic now serving on port ${options.port}...`);
 });

@@ -8,15 +8,17 @@ button {
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
   font-size: 16px;
   margin-bottom: 4px;
   border-radius: 4px;
   width: 175px;
   cursor: pointer;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
 }
 
 button:disabled {

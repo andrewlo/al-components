@@ -1,19 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { ListItem } from '../types/list-item';
+import { NavigationService } from '../core/navigation.service';
 
 @Component({
   selector: 'al-list-page',
   templateUrl: './list-page.component.html',
   styleUrls: ['./list-page.component.css'],
 })
-export class ListPageComponent implements OnInit {
+export class ListPageComponent implements OnInit, OnDestroy {
   list: ListItem[] = [];
   id = 0;
   loading = false;
 
+  constructor(private navigationService: NavigationService) {}
+
   ngOnInit() {
+    this.navigationService.setTitle('List');
     this.list = this.createListItems(6);
+  }
+
+  ngOnDestroy() {
+    this.navigationService.setTitle(null);
   }
 
   loadMore() {

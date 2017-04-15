@@ -1,6 +1,6 @@
 <al-notifications [notifications]="notifications"></al-notifications>
 
-<al-nav-bar [heading]="title" (onLeftClick)="sideMenuOpen = true"></al-nav-bar>
+<al-nav-bar [heading]="title" [backRoute]="backRoute" (openSideMenu)="sideMenuOpen = true"></al-nav-bar>
 <al-side-menu [show]="sideMenuOpen" (close)="sideMenuOpen = false">
   <al-menu heading="Demo App">
     <al-menu-item routerLink="" icon="fa-home" size="large"
@@ -9,6 +9,8 @@
       (onClick)="sideMenuOpen = false">Login</al-menu-item>
     <al-menu-item routerLink="list" icon="fa-list" size="large"
       (onClick)="sideMenuOpen = false">List</al-menu-item>
+    <al-menu-item routerLink="settings" icon="fa-cog" size="large"
+      (onClick)="sideMenuOpen = false">Settings</al-menu-item>
   </al-menu>
 </al-side-menu>
 

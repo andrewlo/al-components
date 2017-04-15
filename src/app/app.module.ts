@@ -7,6 +7,7 @@ import { HelloModule } from './hello/hello.module';
 import { LoginModule } from './login/login.module';
 import { ListPageModule } from './list-page/list-page.module';
 import { SharedModule } from './shared/shared.module';
+import { SettingsModule } from './settings/settings.module';
 
 import { AppComponent } from './app.component';
 
@@ -18,6 +19,7 @@ import { AppComponent } from './app.component';
     HelloModule,
     LoginModule,
     ListPageModule,
+    SettingsModule,
     SharedModule,
   ],
   declarations: [

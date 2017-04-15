@@ -4,11 +4,13 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { AlertComponent } from './alert';
 import { BackdropComponent } from './backdrop';
 import { ButtonComponent } from './button';
 import { InputFormComponent } from './input-form';
+import { LinkComponent } from './link';
 import { ListComponent } from './list';
 import { ListItemComponent } from './list-item';
 import { LoadMoreComponent } from './load-more';
@@ -27,12 +29,14 @@ import { SpinnerComponent } from './spinner';
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    RouterModule,
   ],
   declarations: [
     AlertComponent,
     BackdropComponent,
     ButtonComponent,
     InputFormComponent,
+    LinkComponent,
     ListComponent,
     ListItemComponent,
     LoadMoreComponent,
@@ -52,6 +56,7 @@ import { SpinnerComponent } from './spinner';
     BackdropComponent,
     ButtonComponent,
     InputFormComponent,
+    LinkComponent,
     ListComponent,
     ListItemComponent,
     LoadMoreComponent,

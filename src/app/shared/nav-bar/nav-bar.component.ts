@@ -8,5 +8,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class NavBarComponent {
   @Input() heading: string;
 
-  @Output() onLeftClick = new EventEmitter();
+  @Input() backRoute: string;
+
+  @Output() openSideMenu = new EventEmitter();
 }

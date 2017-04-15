@@ -24,4 +24,8 @@ export class AppComponent {
   get title(): string {
     return this.navigationService.getTitle();
   }
+
+  get backRoute(): string {
+    return this.navigationService.getBackRoute();
+  }
 }

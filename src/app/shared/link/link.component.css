@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  margin-bottom: 4px;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}

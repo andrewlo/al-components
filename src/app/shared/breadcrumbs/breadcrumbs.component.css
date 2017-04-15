@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  margin-bottom: 4px;
+  color: grey;
+}
+
+.crumb:first-child i {
+  display: none;
+}
+
+.crumb {
+  margin-right: 4px;
+  cursor: pointer;
+}

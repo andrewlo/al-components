@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./link.component.css'],
 })
 export class LinkComponent {
-  @Input() route;
+  @Input() route: string;
 }

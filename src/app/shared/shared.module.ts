@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 
 import { AlertComponent } from './alert';
 import { BackdropComponent } from './backdrop';
+import { BreadcrumbsComponent } from './breadcrumbs';
 import { ButtonComponent } from './button';
 import { InputFormComponent } from './input-form';
 import { LinkComponent } from './link';
@@ -34,6 +35,7 @@ import { SpinnerComponent } from './spinner';
   declarations: [
     AlertComponent,
     BackdropComponent,
+    BreadcrumbsComponent,
     ButtonComponent,
     InputFormComponent,
     LinkComponent,
@@ -54,6 +56,7 @@ import { SpinnerComponent } from './spinner';
   exports: [
     AlertComponent,
     BackdropComponent,
+    BreadcrumbsComponent,
     ButtonComponent,
     InputFormComponent,
     LinkComponent,

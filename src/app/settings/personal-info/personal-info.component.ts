@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
+import { Breadcrumb } from '../../types/breadcrumb';
 import { NavigationService } from '../../core/navigation.service';
 
 @Component({
@@ -7,6 +8,17 @@ import { NavigationService } from '../../core/navigation.service';
   styleUrls: ['./personal-info.component.css'],
 })
 export class PersonalInfoComponent implements OnInit, OnDestroy {
+  crumbs: Breadcrumb[] = [{
+    route: '/settings',
+    label: 'Settings',
+  }, {
+    route: '/settings/profile',
+    label: 'Profile',
+  }, {
+    route: '/settings/personal-info',
+    label: 'Personal Info',
+  }];
+
   constructor(private navigationService: NavigationService) {}
 
   ngOnInit() {

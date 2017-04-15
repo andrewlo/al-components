@@ -3,14 +3,11 @@
 <al-nav-bar [heading]="title" [backRoute]="backRoute" (openSideMenu)="sideMenuOpen = true"></al-nav-bar>
 <al-side-menu [show]="sideMenuOpen" (close)="sideMenuOpen = false">
   <al-menu heading="Demo App">
-    <al-menu-item routerLink="" icon="fa-home" size="large"
-      (onClick)="sideMenuOpen = false">Home</al-menu-item>
-    <al-menu-item routerLink="login" icon="fa-sign-in" size="large"
-      (onClick)="sideMenuOpen = false">Login</al-menu-item>
-    <al-menu-item routerLink="list" icon="fa-list" size="large"
-      (onClick)="sideMenuOpen = false">List</al-menu-item>
-    <al-menu-item routerLink="settings" icon="fa-cog" size="large"
-      (onClick)="sideMenuOpen = false">Settings</al-menu-item>
+    <al-menu-item *ngFor="let item of sideMenuItems" [routerLink]="item.route"
+      routerLinkActive="active-menu-item" [routerLinkActiveOptions]="{ exact: true }"
+      [icon]="item.icon" size="large" (onClick)="sideMenuOpen = false">
+      {{item.label}}
+    </al-menu-item>
   </al-menu>
 </al-side-menu>
 

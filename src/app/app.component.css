@@ -1,0 +1,4 @@
+
+.active-menu-item /deep/ .item {
+  color: #4caf50;
+}

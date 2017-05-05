@@ -12,5 +12,7 @@ export class ButtonComponent {
 
   @Input() type: string;
 
+  @Input() bgColorClass = 'bg-green';
+
   @Output() onClick = new EventEmitter();
 }

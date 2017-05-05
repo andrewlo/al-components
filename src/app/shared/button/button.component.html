@@ -1,6 +1,7 @@
 <button (click)="onClick.emit()"
   [attr.type]="type"
-  [disabled]="disabled || loading">
+  [disabled]="disabled || loading"
+  [ngClass]="bgColorClass">
   <span class="contents">
     <span *ngIf="!loading">
       <ng-content></ng-content>

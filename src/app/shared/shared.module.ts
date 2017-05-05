@@ -22,6 +22,7 @@ import { NavBarComponent } from './nav-bar';
 import { NotificationComponent } from './notification';
 import { NotificationsComponent } from './notifications';
 import { PopOverComponent } from './pop-over';
+import { ProgressBarComponent } from './progress-bar';
 import { SectionComponent } from './section';
 import { SideMenuComponent } from './side-menu';
 import { SpinnerComponent } from './spinner';
@@ -49,6 +50,7 @@ import { SpinnerComponent } from './spinner';
     NotificationComponent,
     NotificationsComponent,
     PopOverComponent,
+    ProgressBarComponent,
     SectionComponent,
     SideMenuComponent,
     SpinnerComponent,
@@ -70,6 +72,7 @@ import { SpinnerComponent } from './spinner';
     NotificationComponent,
     NotificationsComponent,
     PopOverComponent,
+    ProgressBarComponent,
     SectionComponent,
     SideMenuComponent,
     SpinnerComponent,

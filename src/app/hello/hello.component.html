@@ -9,6 +9,15 @@
   <al-spinner></al-spinner>
 </al-section>
 
+<al-section heading="Progress Bar">
+  <al-progress-bar value="0"></al-progress-bar>
+  <al-progress-bar value="20"></al-progress-bar>
+  <al-progress-bar [value]="progress" bgColorClass="bg-blue"></al-progress-bar>
+  <al-progress-bar value="70" bgColorClass="bg-yellow"></al-progress-bar>
+  <al-progress-bar value="100" bgColorClass="bg-orange"></al-progress-bar>
+  <al-button (onClick)="onProgressBarButtonClick()">Change progress</al-button>
+</al-section>
+
 <al-section heading="Pop Over">
   <al-button (onClick)="popOverOpen = true">Show menu</al-button>
   <al-pop-over [show]="popOverOpen" (close)="popOverOpen = false">

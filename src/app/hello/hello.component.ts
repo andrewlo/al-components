@@ -18,6 +18,8 @@ export class HelloComponent {
 
   loadingMore = false;
 
+  progress = 40;
+
   constructor(private notificationService: NotificationService) {}
 
   onButtonClick() {
@@ -37,5 +39,12 @@ export class HelloComponent {
   loadMore() {
     this.loadingMore = true;
     setTimeout(() => this.loadingMore = false, 1000);
+  }
+
+  onProgressBarButtonClick() {
+    this.progress = this.progress + 20;
+    if (this.progress > 100) {
+      this.progress = 0;
+    }
   }
 }

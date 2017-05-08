@@ -1,9 +1,9 @@
 <div [formGroup]="form">
-  <label for="{{id}}">{{label}}</label>
-
-  <input type="text" formControlName="{{id}}" placeholder="{{placeholder}}"
-    [attr.disabled]="disabled ? true : null">
-
+  <label>
+    <div>{{label}}</div>
+    <input type="text" formControlName="{{id}}" placeholder="{{placeholder}}"
+      [attr.disabled]="disabled ? true : null">
+  </label>
   <al-alert type="error" [hidden]="form.get(id).valid || form.get(id).pristine" [showHeading]="false">
     {{label}} invalid
   </al-alert>

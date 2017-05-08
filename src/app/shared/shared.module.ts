@@ -28,6 +28,7 @@ import { ProgressBarComponent } from './progress-bar';
 import { SectionComponent } from './section';
 import { SideMenuComponent } from './side-menu';
 import { SpinnerComponent } from './spinner';
+import { ToggleComponent } from './toggle';
 
 @NgModule({
   imports: [
@@ -58,6 +59,7 @@ import { SpinnerComponent } from './spinner';
     SectionComponent,
     SideMenuComponent,
     SpinnerComponent,
+    ToggleComponent,
   ],
   exports: [
     AlertComponent,
@@ -82,6 +84,7 @@ import { SpinnerComponent } from './spinner';
     SectionComponent,
     SideMenuComponent,
     SpinnerComponent,
+    ToggleComponent,
   ],
 })
 export class SharedModule {}

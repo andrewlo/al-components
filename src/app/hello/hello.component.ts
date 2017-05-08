@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 import { NotificationService } from '../core/notification.service';
 
@@ -20,7 +21,16 @@ export class HelloComponent {
 
   progress = 40;
 
-  constructor(private notificationService: NotificationService) {}
+  toggleForm: FormGroup;
+  checked = false;
+
+  constructor(
+    private notificationService: NotificationService,
+    private formBuilder: FormBuilder) {
+    this.toggleForm = this.formBuilder.group({
+      toggle: [''],
+    });
+  }
 
   onButtonClick() {
     this.buttonLoading = true;
@@ -46,5 +56,9 @@ export class HelloComponent {
     if (this.progress > 100) {
       this.progress = 0;
     }
+  }
+
+  onToggle(checked: boolean) {
+    this.checked = checked;
   }
 }

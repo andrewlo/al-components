@@ -21,6 +21,13 @@
   <al-button (onClick)="onProgressBarButtonClick()">Change progress</al-button>
 </al-section>
 
+<al-section heading="Toggle">
+  <form [formGroup]="toggleForm">
+    <al-toggle [form]="toggleForm" id="toggle" (onChange)="onToggle($event)"></al-toggle>
+  </form>
+  <p>Checked: {{checked}}</p>
+</al-section>
+
 <al-section heading="Pop Over">
   <al-button (onClick)="popOverOpen = true">Show menu</al-button>
   <al-pop-over [show]="popOverOpen" (close)="popOverOpen = false">

@@ -1,0 +1,6 @@
+<div [formGroup]="form">
+  <label class="switch">
+    <input type="checkbox" formControlName="{{id}}" (change)="onChange.emit($event.target.checked)">
+    <div class="slider round"></div>
+  </label>
+</div>

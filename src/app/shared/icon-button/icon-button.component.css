@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  appearance: none;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 4px;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+button[type=submit] {
+  appearance: none;
+}

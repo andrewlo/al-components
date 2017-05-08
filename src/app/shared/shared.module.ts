@@ -10,6 +10,8 @@ import { AlertComponent } from './alert';
 import { BackdropComponent } from './backdrop';
 import { BreadcrumbsComponent } from './breadcrumbs';
 import { ButtonComponent } from './button';
+import { FloatingActionComponent } from './floating-action';
+import { IconButtonComponent } from './icon-button';
 import { InputFormComponent } from './input-form';
 import { LinkComponent } from './link';
 import { ListComponent } from './list';
@@ -38,6 +40,8 @@ import { SpinnerComponent } from './spinner';
     BackdropComponent,
     BreadcrumbsComponent,
     ButtonComponent,
+    FloatingActionComponent,
+    IconButtonComponent,
     InputFormComponent,
     LinkComponent,
     ListComponent,
@@ -60,6 +64,8 @@ import { SpinnerComponent } from './spinner';
     BackdropComponent,
     BreadcrumbsComponent,
     ButtonComponent,
+    FloatingActionComponent,
+    IconButtonComponent,
     InputFormComponent,
     LinkComponent,
     ListComponent,

@@ -10,7 +10,7 @@
 }
 
 .outer {
-  width: 350px;
+  max-width: 350px;
   height: 25px;
   border-radius: 10px;
   overflow: hidden;

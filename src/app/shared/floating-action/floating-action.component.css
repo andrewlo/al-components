@@ -1,0 +1,16 @@
+
+.floating-icon-button {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .floating-icon-button {
+    justify-content: center;
+  }
+}

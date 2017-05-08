@@ -1,0 +1,9 @@
+<button (click)="onClick.emit()"
+  [disabled]="disabled || loading"
+  [ngClass]="bgColorClass">
+  <span class="contents">
+    <span *ngIf="!loading" class="fa fa-2x" [ngClass]="iconClass">
+    </span>
+    <al-spinner *ngIf="loading" size="18px"></al-spinner>
+  </span>
+</button>

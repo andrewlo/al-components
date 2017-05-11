@@ -15,5 +15,7 @@ export class InputFormComponent {
 
   @Input() disabled = false;
 
+  @Input() type = 'text';
+
   @Input() form: FormGroup;
 }

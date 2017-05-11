@@ -6,7 +6,7 @@
 
     <al-input-form id="email" label="Email:" placeholder="Enter email"
       [form]="loginForm" [disabled]="loggingIn"></al-input-form>
-    <al-input-form id="password" label="Password:" placeholder="Enter password"
+    <al-input-form id="password" label="Password:" placeholder="Enter password" type="password"
       [form]="loginForm" [disabled]="loggingIn"></al-input-form>
 
     <al-button type="submit" [disabled]="!loginForm.valid" [loading]="loggingIn" [fillWidth]="true">Log In</al-button>

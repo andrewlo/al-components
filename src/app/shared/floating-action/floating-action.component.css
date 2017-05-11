@@ -2,7 +2,6 @@
 .floating-icon-button {
   position: fixed;
   right: 0;
-  left: 0;
   bottom: 0;
   padding: 20px;
   display: flex;

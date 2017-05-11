@@ -12,9 +12,21 @@ export class AlertComponent implements OnChanges {
 
   @Input() type: string;
 
+  @Input() shadow = false;
+
   @Output() close = new EventEmitter();
 
   ngOnChanges() {
     this.heading = this.heading || this.type;
+  }
+
+  getClasses(): string {
+    const classes: string[] = [this.type];
+
+    if (this.shadow) {
+      classes.push('shadow');
+    }
+
+    return classes.join(' ');
   }
 }

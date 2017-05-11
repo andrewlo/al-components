@@ -1,4 +1,4 @@
-<div class="alert" [ngClass]="type">
+<div class="alert" [ngClass]="getClasses()">
   <div *ngIf="showHeading" class="heading">{{heading}}</div>
   <ng-content></ng-content>
 </div>

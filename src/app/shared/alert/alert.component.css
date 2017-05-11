@@ -12,6 +12,10 @@
   margin-bottom: 5px;
 }
 
+.alert.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .alert.success {
   background-color: #dff0d8;
   border-color: #d6e9c6;

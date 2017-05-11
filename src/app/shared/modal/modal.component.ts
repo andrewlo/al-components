@@ -9,4 +9,9 @@ export class ModalComponent {
   @Input() show: boolean;
 
   @Output() close = new EventEmitter();
+
+  onClick(event: Event) {
+    // Prevent click from going to backdrop and closing the modal
+    event.stopPropagation();
+  }
 }

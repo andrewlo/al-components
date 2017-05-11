@@ -1,10 +1,11 @@
 .modal {
+  position: relative;
   opacity: 0;
   visibility: hidden;
-  z-index: 2;
   background-color: white;
   margin: 150px auto;
   width: 80%;
+  max-width: 800px;
   transition: opacity 0.2s ease-in-out;
   padding: 10px;
   border-radius: 3px;
@@ -15,4 +16,12 @@
 .modal.show {
   opacity: 1;
   visibility: visible;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: grey;
 }

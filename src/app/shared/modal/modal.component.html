@@ -1,6 +1,6 @@
-
 <al-backdrop [show]="show" (click)="close.emit()" [darken]="true">
-  <div [ngClass]="{ show: show }" class="modal">
+  <div [ngClass]="{ show: show }" class="modal" (click)="onClick($event)">
+    <i class="close fa fa-times fa-lg" (click)="close.emit()"></i>
     <ng-content></ng-content>
   </div>
 </al-backdrop>

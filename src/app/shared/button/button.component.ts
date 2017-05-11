@@ -14,5 +14,17 @@ export class ButtonComponent {
 
   @Input() bgColorClass = 'bg-green';
 
+  @Input() fillWidth = false;
+
   @Output() onClick = new EventEmitter();
+
+  getClasses(): string {
+    const classes: string[] = [this.bgColorClass];
+
+    if (this.fillWidth) {
+      classes.push('fill-width');
+    }
+
+    return classes.join(' ');
+  }
 }

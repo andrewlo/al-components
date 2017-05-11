@@ -33,3 +33,7 @@ button:disabled {
 button[type=submit] {
   appearance: none;
 }
+
+button.fill-width {
+  width: 100%;
+}

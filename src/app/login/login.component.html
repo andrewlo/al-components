@@ -1,12 +1,16 @@
-<form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
-  <p>Username: user, Password: pass</p>
 
-  <al-input-form id="email" label="Email:" placeholder="Enter email"
-    [form]="loginForm" [disabled]="loggingIn"></al-input-form>
-  <al-input-form id="password" label="Password:" placeholder="Enter password"
-    [form]="loginForm" [disabled]="loggingIn"></al-input-form>
+<p>Username: user, Password: pass</p>
 
-  <al-button type="submit" [disabled]="!loginForm.valid" [loading]="loggingIn">Log In</al-button>
-  <al-alert type="success" [showHeading]="false" *ngIf="loginSuccess">Log in successful!</al-alert>
-  <al-alert type="error" [showHeading]="false" *ngIf="loginError">Log in error</al-alert>
- </form>
+<al-card>
+  <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+
+    <al-input-form id="email" label="Email:" placeholder="Enter email"
+      [form]="loginForm" [disabled]="loggingIn"></al-input-form>
+    <al-input-form id="password" label="Password:" placeholder="Enter password"
+      [form]="loginForm" [disabled]="loggingIn"></al-input-form>
+
+    <al-button type="submit" [disabled]="!loginForm.valid" [loading]="loggingIn" [fillWidth]="true">Log In</al-button>
+    <al-alert type="success" [showHeading]="false" *ngIf="loginSuccess">Log in successful!</al-alert>
+    <al-alert type="error" [showHeading]="false" *ngIf="loginError">Log in error</al-alert>
+   </form>
+</al-card>

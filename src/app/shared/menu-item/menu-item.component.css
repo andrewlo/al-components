@@ -7,7 +7,6 @@
   padding: 5px;
   cursor: pointer;
   color: #595959;
-  transition: background-color 0.5s ease;
 }
 
 .item.large {
@@ -20,5 +19,5 @@
 }
 
 .item:hover {
-  background-color: #8ff0cc;
+  color: #19a974;
 }

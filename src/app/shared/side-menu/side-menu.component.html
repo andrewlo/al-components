@@ -1,5 +1,5 @@
 <div [ngClass]="{ show: show }" class="side-menu">
-  <i class="close fa fa-times fa-lg" (click)="close.emit()"></i>
+  <al-close-button (onClick)="close.emit()"></al-close-button>
   <ng-content></ng-content>
 </div>
 <al-backdrop [show]="show" [darken]="true" (click)="close.emit()"></al-backdrop>

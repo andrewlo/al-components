@@ -15,6 +15,11 @@ header.expandable {
   cursor: pointer;
 }
 
+
+header.expandable:hover {
+  color: #a6a6a6;
+}
+
 .expandable-icon {
   float: right;
   color: lightgrey;

@@ -1,0 +1,12 @@
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: grey;
+}
+
+.close:hover {
+  color: #a6a6a6;
+}

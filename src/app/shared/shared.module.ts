@@ -11,6 +11,7 @@ import { BackdropComponent } from './backdrop';
 import { BreadcrumbsComponent } from './breadcrumbs';
 import { ButtonComponent } from './button';
 import { CardComponent } from './card';
+import { CloseButtonComponent } from './close-button';
 import { FloatingActionComponent } from './floating-action';
 import { IconButtonComponent } from './icon-button';
 import { InputFormComponent } from './input-form';
@@ -43,6 +44,7 @@ import { ToggleComponent } from './toggle';
     BreadcrumbsComponent,
     ButtonComponent,
     CardComponent,
+    CloseButtonComponent,
     FloatingActionComponent,
     IconButtonComponent,
     InputFormComponent,
@@ -69,6 +71,7 @@ import { ToggleComponent } from './toggle';
     BreadcrumbsComponent,
     ButtonComponent,
     CardComponent,
+    CloseButtonComponent,
     FloatingActionComponent,
     IconButtonComponent,
     InputFormComponent,

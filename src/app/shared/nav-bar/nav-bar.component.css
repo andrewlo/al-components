@@ -18,3 +18,7 @@
   position: absolute;
   cursor: pointer;
 }
+
+.left:hover {
+  color: #e6e6e6;
+}

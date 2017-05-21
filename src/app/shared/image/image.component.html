@@ -1,0 +1,4 @@
+<al-spinner *ngIf="!loaded"></al-spinner>
+<img *ngIf="!notFound" [ngClass]="{ loaded: loaded }"
+  [src]="src" (load)="onLoaded()" (error)="onError()">
+<div *ngIf="notFound">Image not found</div>

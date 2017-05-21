@@ -14,6 +14,7 @@ import { CardComponent } from './card';
 import { CloseButtonComponent } from './close-button';
 import { FloatingActionComponent } from './floating-action';
 import { IconButtonComponent } from './icon-button';
+import { ImageComponent } from './image';
 import { InputFormComponent } from './input-form';
 import { LinkComponent } from './link';
 import { ListComponent } from './list';
@@ -47,6 +48,7 @@ import { ToggleComponent } from './toggle';
     CloseButtonComponent,
     FloatingActionComponent,
     IconButtonComponent,
+    ImageComponent,
     InputFormComponent,
     LinkComponent,
     ListComponent,
@@ -74,6 +76,7 @@ import { ToggleComponent } from './toggle';
     CloseButtonComponent,
     FloatingActionComponent,
     IconButtonComponent,
+    ImageComponent,
     InputFormComponent,
     LinkComponent,
     ListComponent,

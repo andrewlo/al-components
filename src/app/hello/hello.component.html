@@ -75,3 +75,13 @@
 <al-section heading="Load more">
   <al-load-more (load)="loadMore()" [loading]="loadingMore"></al-load-more>
 </al-section>
+
+<al-section heading="Image">
+  <p>Image with bad src:</p>
+  <al-image></al-image>
+  <p>Image component which fades in when loaded:</p>
+  <al-button (onClick)="onShowImage()">Trigger image load</al-button>
+  <div *ngIf="showImage">
+    <al-image [src]="getImageSrc()"></al-image>
+  </div>
+</al-section>

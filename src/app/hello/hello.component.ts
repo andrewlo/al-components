@@ -24,6 +24,9 @@ export class HelloComponent {
   toggleForm: FormGroup;
   checked = false;
 
+  showImage = false;
+  imageSrcCount = 0;
+
   constructor(
     private notificationService: NotificationService,
     private formBuilder: FormBuilder) {
@@ -60,5 +63,20 @@ export class HelloComponent {
 
   onToggle(checked: boolean) {
     this.checked = checked;
+  }
+
+  onShowImage() {
+    // Remove image then add it again to simulate image load
+    this.showImage = false;
+    setTimeout(() => {
+      this.imageSrcCount ++;
+      this.showImage = true;
+    },
+    50);
+  }
+
+  getImageSrc() {
+    // imageSrcCount prevents browser caching of image
+    return `http://www.gcfitfest.ca/wp-content/uploads/2016/12/Toronto.jpg?disableCache=${this.imageSrcCount}`;
   }
 }

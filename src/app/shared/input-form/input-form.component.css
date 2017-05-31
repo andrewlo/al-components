@@ -7,10 +7,24 @@
 label {
   display: block;
   margin-bottom: 10px;
+  position: relative;
+  margin-top: 20px;
 }
 
 .label {
-  margin-bottom: 5px;
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #b3b3b3;
+  transition: all 0.5s;
+}
+
+input:focus + .label, .ng-valid + .label {
+  color: #666666;
+  top: -20px;
+  left: 5px;
+  font-size: 14px;
 }
 
 input {
@@ -18,6 +32,8 @@ input {
   width: 100%;
   height: 35px;
   padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #bfbfbf;
 }
 
 input.ng-dirty.ng-touched.ng-valid {

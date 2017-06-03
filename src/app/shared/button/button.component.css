@@ -24,6 +24,7 @@ button:hover {
 .contents {
   display: flex;
   justify-content: center;
+  font-weight: 300;
 }
 
 button:disabled {

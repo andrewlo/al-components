@@ -9,6 +9,7 @@ label {
   margin-bottom: 10px;
   position: relative;
   margin-top: 20px;
+  font-weight: 300;
 }
 
 .label {
@@ -21,10 +22,15 @@ label {
 }
 
 input:focus + .label, .ng-valid + .label {
-  color: #666666;
+  color: #555555;
   top: -20px;
   left: 5px;
   font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #555555;
 }
 
 input {
@@ -34,6 +40,7 @@ input {
   padding: 10px;
   border-radius: 3px;
   border: 1px solid #bfbfbf;
+  transition: all 0.5s;
 }
 
 input.ng-dirty.ng-touched.ng-valid {

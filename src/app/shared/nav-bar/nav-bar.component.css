@@ -22,3 +22,10 @@
 .left:hover {
   color: #e6e6e6;
 }
+
+.heading {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1.3em;
+}

@@ -9,6 +9,8 @@
   color: #595959;
   font-weight: 300;
   letter-spacing: 1px;
+  background-color: transparent;
+  border: none;
 }
 
 .item.large {

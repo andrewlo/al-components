@@ -1,7 +1,6 @@
 :host {
   display: block;
   margin-bottom: 4px;
-  color: grey;
 }
 
 .crumb:first-child i {
@@ -11,4 +10,10 @@
 .crumb {
   margin-right: 4px;
   cursor: pointer;
+  color: grey;
+  text-decoration: none;
+}
+
+.crumb:hover {
+  color: black;
 }

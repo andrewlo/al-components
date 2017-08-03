@@ -20,3 +20,11 @@
   transform: translateX(0);
   box-shadow: 6px 0px 20px 0 rgba(0, 0, 0, 0.2);
 }
+
+.side-menu:not(.show) al-close-button {
+  display: none;
+}
+
+.side-menu:not(.show) >>> al-menu {
+  display: none;
+}

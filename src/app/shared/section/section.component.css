@@ -4,19 +4,26 @@
   padding: 10px;
 }
 
-header {
+.header {
   padding-bottom: 10px;
   margin-bottom: 10px;
   font-size: 1.5em;
   border-bottom: 1px solid lightgrey;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  color: black;
+  text-align: left;
 }
 
-header.expandable {
+.header.expandable {
   cursor: pointer;
 }
 
 
-header.expandable:hover {
+.header.expandable:hover {
   color: #a6a6a6;
 }
 

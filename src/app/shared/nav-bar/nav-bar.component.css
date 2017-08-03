@@ -15,8 +15,10 @@
 
 .left {
   float: left;
-  position: absolute;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
 }
 
 .left:hover {

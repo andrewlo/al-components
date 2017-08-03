@@ -1,4 +1,4 @@
-<span *ngFor="let crumb of breadcrumbs" class="crumb" [routerLink]="crumb.route">
+<a *ngFor="let crumb of breadcrumbs" class="crumb" [routerLink]="crumb.route">
   <i class="fa fa-chevron-right"></i>
   {{crumb.label}}
-</span>
+</a>

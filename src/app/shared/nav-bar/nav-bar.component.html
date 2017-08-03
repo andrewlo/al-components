@@ -1,13 +1,13 @@
 <div class="nav-bar bg-green">
   <!-- Menu button -->
-  <div *ngIf="!backRoute" class="left" (click)="openSideMenu.emit()">
+  <button *ngIf="!backRoute" class="left" (click)="openSideMenu.emit()">
     <i class="fa fa-lg fa-bars"></i>
-  </div>
+  </button>
 
   <!-- Back button -->
-  <div *ngIf="backRoute" class="left" [routerLink]="backRoute">
+  <button *ngIf="backRoute" class="left" [routerLink]="backRoute">
     <i class="fa fa-lg fa-chevron-left"></i>
-  </div>
+  </button>
 
   <div *ngIf="heading" class="heading">{{heading}}</div>
 </div>

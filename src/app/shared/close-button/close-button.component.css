@@ -5,6 +5,8 @@
   right: 10px;
   cursor: pointer;
   color: grey;
+  background-color: transparent;
+  border: none;
 }
 
 .close:hover {

@@ -1,4 +1,4 @@
-<div class="item" [ngClass]="{ large: size === 'large' }" (click)="onClick.emit()">
+<button class="item" [ngClass]="{ large: size === 'large' }" (click)="onClick.emit()">
   <i class="fa {{icon}} icon" [ngClass]="{ 'fa-lg': size === 'large' }" *ngIf="icon"></i>
   <ng-content></ng-content>
-</div>
+</button>

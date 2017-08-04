@@ -6,7 +6,11 @@
 }
 
 .switch input {
-  display: none;
+  opacity: 0;
+}
+
+.switch input:focus + .slider {
+  border: 1px solid black;
 }
 
 .slider {
